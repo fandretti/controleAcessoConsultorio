@@ -1,0 +1,12 @@
+POST http://127.0.0.1:8000/api/reservas
+Content-Type: application/json
+
+{
+    "sala_id": 2,
+    "solicitante_id": 1,
+    "inicio_reserva": "2023-04-24",
+    "fim_reserva": "2023-12-31",
+    "dia": 5,
+    "hora_inicio": "12:00:00",
+    "hora_fim": "13:45:00"
+}

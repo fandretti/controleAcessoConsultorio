@@ -1,0 +1,6 @@
+POST http://127.0.0.1:8000/api/salaocupada/2
+Content-Type: application/json
+
+{
+    "data": "2023-04-29 12:00:00"
+}
