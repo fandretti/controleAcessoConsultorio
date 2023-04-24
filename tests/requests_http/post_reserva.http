@@ -1,4 +1,4 @@
-POST http://127.0.0.1:8000/api/reservas
+POST http://127.0.0.1:8005/api/reservas
 Content-Type: application/json
 
 {
@@ -6,7 +6,7 @@ Content-Type: application/json
     "solicitante_id": 1,
     "inicio_reserva": "2023-04-24",
     "fim_reserva": "2023-12-31",
-    "dia": 5,
+    "dia": 3,
     "hora_inicio": "12:00:00",
     "hora_fim": "13:45:00"
 }

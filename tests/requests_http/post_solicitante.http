@@ -1,8 +1,8 @@
-POST http://127.0.0.1:8000/api/solicitantes
+POST http://127.0.0.1:8005/api/solicitantes
 Content-Type: application/json
 
 {
-    "nome": "joaozinho do mercadinho",
-    "email": "joao@mercadinho.com.br",
-    "tag": "111333777"
+    "nome": "chico do bode",
+    "email": "chico@bode.com.br",
+    "tag": "999111555"
 }
