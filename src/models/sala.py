@@ -36,3 +36,8 @@ class Sala(Base):
                     if _diadasemana == r.dia:
                         return True
         return False
+    
+    @hybrid_method
+    def is_sala_ocupada_no_periodo(self, dia_da_semana: int, data_inicio: date, data_fim: date, hora_inicio: time, hora_fim: time) -> bool:
+        reservas_no_periodo = [r for r in self.reservas_sala if data_inicio <= r.fim_reserva and data_fim >= r.inicio_reserva and hora_inicio <= r.hora_fim and hora_fim >= r.hora_inicio and dia_da_semana == r.dia]
+        return any(reservas_no_periodo)
